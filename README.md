@@ -76,11 +76,11 @@ Example: A hacker wants to scan 5,000 sites. Splits them into 50 files, runs it,
 ### 1. Get It Ready
 Grab it and go inside:
 
-``git clone https://github.com/Graybyt3/Graybyte-Reaper-X.git
+``git clone https://github.com/Graybyt3/Graybyte-Reaper-X.git  
 cd GRAYBYTE-REAPER-X  
 python graybyte-reaper-x.py  ``
 
-##__🎥 Video demonstration and use : https://www.youtube.com/watch?v=UdjatH8mwR4__
+## __🎥 Video demonstration and use : https://www.youtube.com/watch?v=UdjatH8mwR4__
 
 
 
