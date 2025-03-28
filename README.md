@@ -80,7 +80,7 @@ Grab it and go inside:
 ``cd GRAYBYTE-REAPER-X``  
 ``python graybyte-reaper-x.py``  
 
-## __🎥 Video demonstration and use : https://www.youtube.com/watch?v=UdjatH8mwR4__
+## __🎥 Video demonstration and use : [https://www.youtube.com/watch?v=UdjatH8mwR4](https://www.youtube.com/watch?v=qKHUhMRcPVo)__
 
 
 
