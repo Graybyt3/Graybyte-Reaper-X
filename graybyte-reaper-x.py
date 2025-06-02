@@ -9,31 +9,40 @@ import sys
 try:
     init()
 except:
-    pass
+    print(f"{Fore.RED}[!!] cOlOrAmA MoDuLe nOt fOuNd [!!]\n{Style.RESET_ALL}")
 
 ascii_art = (
-    f"\n\n\n\n{Fore.CYAN}░█▀▀█ {Fore.GREEN}░█▀▀█ {Fore.YELLOW}─█▀▀█ {Fore.GREEN}░█──░█ 　 {Fore.MAGENTA}░█▀▀█ {Fore.CYAN}░█▀▀▀ {Fore.CYAN}─█▀▀█ {Fore.GREEN}░█▀▀█ {Fore.YELLOW}░█▀▀▀ {Fore.MAGENTA}░█▀▀█ {Fore.CYAN}── {Fore.CYAN}▀▄░▄▀{Style.RESET_ALL}\n"
-    f"{Fore.CYAN}░█─▄▄ {Fore.GREEN}░█▄▄▀ {Fore.YELLOW}░█▄▄█ {Fore.GREEN}░█▄▄▄█ 　 {Fore.MAGENTA}░█▄▄▀ {Fore.CYAN}░█▀▀▀ {Fore.CYAN}░█▄▄█ {Fore.GREEN}░█▄▄█ {Fore.YELLOW}░█▀▀▀ {Fore.MAGENTA}░█▄▄▀ {Fore.CYAN}▀▀ {Fore.CYAN}─░█──{Style.RESET_ALL}\n"
-    f"{Fore.CYAN}░█▄▄█ {Fore.GREEN}░█─░█ {Fore.YELLOW}░█─░█ {Fore.GREEN}──░█── 　 {Fore.MAGENTA}░█─░█ {Fore.CYAN}░█▄▄▄ {Fore.CYAN}░█─░█ {Fore.GREEN}░█─── {Fore.YELLOW}░█▄▄▄ {Fore.MAGENTA}░█─░█ {Fore.CYAN}── {Fore.CYAN}▄▀░▀▄{Style.RESET_ALL}\n\n\n\n"
-    f"{Fore.GREEN}[!!] INPUT/OUTPUT DIRECTORIES ARE AUTOMATICALLY SET [!!]\n\n{Style.RESET_ALL}"
-    f"{Fore.CYAN}INPUT: {Fore.GREEN}<script_directory>/parts\n"
-    f"{Fore.CYAN}OUTPUT: {Fore.GREEN}<script_directory>/executed\n\n{Style.RESET_ALL}"
-)
+    f"\n\n{Fore.RED}░█▀▀█ {Fore.GREEN}░█▀▀█ {Fore.YELLOW}─█▀▀█ {Fore.GREEN}░█──░█ 　 {Fore.MAGENTA}░█▀▀█ {Fore.CYAN}░█▀▀▀ {Fore.RED}─█▀▀█ {Fore.GREEN}░█▀▀█ {Fore.YELLOW}░█▀▀▀ {Fore.MAGENTA}░█▀▀█ {Fore.CYAN}── {Fore.RED}▀▄░▄▀{Style.RESET_ALL}\n"
+    f"{Fore.RED}░█─▄▄ {Fore.GREEN}░█▄▄▀ {Fore.YELLOW}░█▄▄█ {Fore.GREEN}░█▄▄▄█ 　 {Fore.MAGENTA}░█▄▄▀ {Fore.CYAN}░█▀▀▀ {Fore.RED}░█▄▄█ {Fore.GREEN}░█▄▄█ {Fore.YELLOW}░█▀▀▀ {Fore.MAGENTA}░█▄▄▀ {Fore.CYAN}▀▀ {Fore.RED}─░█──{Style.RESET_ALL}\n"
+    f"{Fore.RED}░█▄▄█ {Fore.GREEN}░█─░█ {Fore.YELLOW}░█─░█ {Fore.GREEN}──░█── 　 {Fore.MAGENTA}░█─░█ {Fore.CYAN}░█▄▄▄ {Fore.RED}░█─░█ {Fore.GREEN}░█─── {Fore.YELLOW}░█▄▄▄ {Fore.MAGENTA}░█─░█ {Fore.CYAN}── {Fore.RED}▄▀░▀▄{Style.RESET_ALL}\n\n"
+    f"{Fore.GREEN}[!!] INPUT/OUTPUT DIRECTORIES ARE AUTOMATICALLY SET [!!]\n\n"
+    f"INPUT: {Fore.GREEN}{{}}/parts\n"
+    f"OUTPUT: {Fore.GREEN}{{}}/executed\n\n"
+    f"--------------------------------------------------------------------------------{Style.RESET_ALL}"
+).format(os.getcwd(), os.getcwd())
 print(ascii_art)
 
 log_ascii_art = (
     "█▀█ █▀▀ ▄▀█ █▀█ █▀▀ █▀█ ▄▄ ▀▄▀   █░░ █▀█ █▀▀ █▀\n"
     "█▀▄ ██▄ █▀█ █▀▀ ██▄ █▀▄ ░░ █░█   █▄▄ █▄█ █▄█ ▄█\n\n"
-    "GRAYBYTE CHAOSLOGGER-DETAILED LOGS\n"
-    "MY LIFE IS A LIE AND IM LIVING IN THIS ONLY TRUTH -GRAYBYTE\n"
+    "gRaYbYtE cHaOsLoGgEr-dEtAiLeD lOgS\n"
+    "mY LiFe iS A LiE AnD IM LiViNg iN ThIs oNlY TrUtH -gRaYbYtE\n"
     "-----------------------------------------------------------------------------------------------------------------------------------------------\n"
-    "FOR MORE INFORMATION AND HELP\n\n"
-    "TELEGRAM: https://t.me/rex_cc\n"
-    "FACEBOOK: https://www.facebook.com/graybyt3\n"
-    "INSTRAGRAM: https://www.instagram.com/gray_byte\n"
-    "X: https://x.com/gray_byte\n"
+    "fOr mOrE InFoRmAtIoN AnD HeLp\n\n"
+    "TeLeGrAm : https://t.me/rex_cc\n"
+    "fAcEbOoK : https://www.facebook.com/graybyt3\n"
+    "iNsTaGrAm : https://www.instagram.com/gray_byte\n"
+    "X : https://x.com/gray_byte\n"
     "-----------------------------------------------------------------------------------------------------------------------------------------------\n"
 )
+
+##**************************************************************************
+# SeT ThE DiReCtOrY Or pAtHs hErE In tHiS FoRmAt                          *
+#                                                                         *
+# LiNuX "/home/username/Desktop/parent-dir/graybyte-reaper-x/attack/"     *
+# WiNdOwS: "C:\\Users\\Administrator\\Desktop\\graybyte-reaper-x\\attack" *
+#                                                                         *
+#**************************************************************************
 
 working_directory = os.getcwd()
 input_directory = os.path.join(working_directory, "parts")
@@ -47,10 +56,12 @@ if not os.path.exists(log_directory):
 def log_error(error_msg):
     error_file_path = os.path.join(log_directory, 'byte-error-log.txt')
     timestamp = datetime.now().strftime('%d-%B-%Y | %I:%M:%S %p')
-    plain_error_msg = error_msg.replace(f"{Fore.CYAN}", "").replace(f"{Fore.RED}", "").replace(f"{Fore.YELLOW}", "").replace(f"{Fore.GREEN}", "").replace(f"{Style.RESET_ALL}", "").replace(f"{Style.BRIGHT}", "")
+    if not os.path.exists(log_directory):
+        os.makedirs(log_directory)
+    plain_error_msg = error_msg.replace(f"{Fore.RED}", "").replace(f"{Style.RESET_ALL}", "")
     entry = (
         f"\n{plain_error_msg}\n"
-        f"ENCOUNTERED ON: {timestamp}\n"
+        f"eNcOuNtReD On : {timestamp}\n"
         f"-----------------------------------------------------------------------------------------------------------------------------------------------\n\n"
     )
     if not os.path.exists(error_file_path):
@@ -59,42 +70,46 @@ def log_error(error_msg):
     with open(error_file_path, 'a', encoding='utf-8') as error_file:
         error_file.write(entry)
 
-sys.stderr = open(os.devnull, 'w')
-
 if not os.path.exists(input_directory):
-    os.makedirs(input_directory)
-    log_error("INPUT DIRECTORY NOT FOUND, CREATED: " + input_directory)
+    error_msg = f"{Fore.RED}[!!] iNpUt dIrEcToRy nOt fOuNd: {input_directory} [!!]\n{Style.RESET_ALL}"
+    print(error_msg)
+    log_error(error_msg)
+    input("pReSs eNtEr tO CoNtInUe oR CtRl+c tO ExIt...")
 
 if not os.path.exists(output_directory):
     os.makedirs(output_directory)
-    print(f"\n{Fore.GREEN}[+] Output Directory Created: {output_directory.ljust(50)} [+]{Style.RESET_ALL}\n")
 
 input_files = [file for file in os.listdir(input_directory) if file.endswith(".txt")]
 
 if not input_files:
-    log_error("NO .TXT FILES FOUND IN " + input_directory)
-    sys.exit(1)
+    error_msg = f"{Fore.RED}[!!] No fIlEs fOuNd iN {input_directory} [!!]\n{Style.RESET_ALL}"
+    print(error_msg)
+    log_error(error_msg)
+    input(f"{Fore.RED}pReSs eNtEr tO CoNtInUe oR CtRl+c tO ExIt......{Style.RESET_ALL}")
 
 if not os.path.exists("x.py"):
-    log_error("X.PY NOT FOUND")
+    error_msg = f"{Fore.RED}[!!] x.py pReSs eNtEr tO CoNtInUe oR CtRl+c tO ExIt...... [!!]{Style.RESET_ALL}"
+    print(error_msg)
+    log_error(error_msg)
+    input(f"{Fore.RED}pReSs eNtEr ExIt......{Style.RESET_ALL}")
     sys.exit(1)
 
 for input_file in input_files:
     start_time = time.time()
     start_datetime = datetime.now()
     
-    print(f"\n{Fore.CYAN}### Processing File: {input_file.ljust(50)} ###{Style.RESET_ALL}")
-    time.sleep(0.5)
-    
     input_file_path = os.path.join(input_directory, input_file)
     
     try:
-        with open(input_file_path, 'r', encoding='utf-8') as f:
+        with open(input_file_path, 'r') as f:
             url_count = sum(1 for line in f if line.strip())
-        print(f"{Fore.GREEN}[+] Loaded Successfully: {input_file.ljust(50)} [+]{Style.RESET_ALL}\n")
-        print(f"{Fore.GREEN}[+] Total URLs: {str(url_count).rjust(10)} {Style.RESET_ALL}\n")
+        print(f"{Fore.YELLOW}### Processing File: {input_file_path}{' ' * (75 - len(input_file_path))}###{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}[+] Loaded Successfully: {input_file}{' ' * (50 - len(input_file))}[+]{Style.RESET_ALL}\n")
+        print(f"{Fore.GREEN}[+] Total URLs:        {url_count}{Style.RESET_ALL}\n\n")
     except FileNotFoundError:
-        log_error("FILE NOT FOUND: " + input_file_path)
+        error_msg = f"{Fore.RED}[!!] FiLe nOt fOuNd: {input_file_path} [!!]{Style.RESET_ALL}"
+        print(error_msg)
+        log_error(error_msg)
         continue
     
     checking_file_path = os.path.join(log_directory, 'byte-stream.txt')
@@ -102,29 +117,23 @@ for input_file in input_files:
         with open(checking_file_path, 'w', encoding='utf-8') as ww:
             ww.write(log_ascii_art)
     with open(checking_file_path, 'a', encoding='utf-8') as ww:
-        ww.write(f"\nFILENAME: {input_file}\n")
-        ww.write(f"FILE TAKEN FOR EXECUTION: {start_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}\n")
+        ww.write(f"\nFiLeNaMe: {input_file}\n")
+        ww.write(f"FiLe tAkEn fOr eXeCuTiOn : {start_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}\n")
         ww.write("-----------------------------------------------------------------------------------------------------------------------------------------------\n")
     
     try:
         #*********************************************
-        # CHANGE THE X.PY TO YOUR FILE NAME HERE     #
+        # CHaNgE ThE x.py tO YoUr fIlE NaMe hErE     #
         #*********************************************
-        process = subprocess.Popen(
-            [sys.executable, "x.py"],
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        stdout, stderr = process.communicate(input=input_file_path)
-        if stdout or stderr:
-            log_error(f"X.PY OUTPUT FOR {input_file}:\nSTDOUT: {stdout}\nSTDERR: {stderr}")
+
+        process = subprocess.Popen([sys.executable, "x.py"], stdin=subprocess.PIPE, text=True)
+        process.communicate(input=input_file_path)
+
     except Exception as e:
-        log_error(f"FAILED TO EXECUTE X.PY FOR {input_file}: {str(e)}")
-        continue
-    
-    time.sleep(0.5)
+        error_msg = f"{Fore.RED}[!!] fAiLeD To eXeCuTe x.py FoR {input_file}\n[!!] cHeCk eNvIrOnMeNt vAlIdAtIoN\n[-] PrOcEsSiNg sToPpEd............\n{Style.RESET_ALL}"
+        print(error_msg)
+        log_error(error_msg)
+        break
     
     output_file_path = os.path.join(output_directory, input_file)
     if os.path.exists(output_file_path):
@@ -135,18 +144,21 @@ for input_file in input_files:
     end_datetime = datetime.now()
     time_taken = end_time - start_time
     
-    print(f"\nSTART: {start_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}")
+    print(f"START: {start_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}")
     print(f"END: {end_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}")
-    print(f"TIME TAKEN: {time_taken:.2f} SECONDS | URLS CHECKED: {url_count}\n")
-    print(f"{Fore.CYAN}## EXECUTION OF {input_file} DONE ##{Style.RESET_ALL}\n")
+    print(f"TIME TAKEN: {time_taken:.2f} SECONDS | URLS CHECKED: {url_count}")
+    print(f"\n{Fore.GREEN}## MOVED {input_file} TO {output_directory} ##{Style.RESET_ALL}\n")
+    print("--------------------------------------------------------------------------------")
     
     checked_file_path = os.path.join(log_directory, 'byte-archive.txt')
     if not os.path.exists(checked_file_path):
         with open(checked_file_path, 'w', encoding='utf-8') as check_file:
             check_file.write(log_ascii_art)
     with open(checked_file_path, 'a', encoding='utf-8') as check_file:
-        check_file.write(f"FILENAME: {input_file}\n")
-        check_file.write(f"START: {start_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}\n")
-        check_file.write(f"END: {end_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}\n")
-        check_file.write(f"TIME TAKEN: {time_taken:.2f} SECONDS | URLS CHECKED: {url_count}\n")
+        check_file.write(f"\nFiLeNaMe: {input_file}\n")
+        check_file.write(f"sTaRt: {start_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}\n")
+        check_file.write(f"eNd: {end_datetime.strftime('%d-%B-%Y | %I:%M:%S %p')}\n")
+        check_file.write(f"tImE TaKeN: {time_taken:.2f} sEcOnDs | uRlS ChEcKeD: {url_count}\n")
         check_file.write("-----------------------------------------------------------------------------------------------------------------------------------------------\n")
+    
+    time.sleep(1)
