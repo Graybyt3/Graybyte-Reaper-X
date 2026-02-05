@@ -1,6 +1,11 @@
 # 💚 GRAYBYTE-REAPER-X 💚
 
 **A Simple Tool for Lazy Hackers with Potato PCs**
+<br><br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Graybyt3/Graybyte-Reaper-X/refs/heads/main/GRAY-REAPER-X.png" alt="header banner" />
+</p>
+<br><br>
 
 **GRAYBYTE-REAPER-X**, is a Python script for lazy people like me who don’t want to work hard. Got a weak PC that can’t handle big jobs? No problem—this splits them into small tasks so you can run it and sleep. Made by GRAYBYTE for slackers who hack smart, not hard.
 
